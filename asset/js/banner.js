@@ -18,7 +18,7 @@ $(function () {
         arrows: false,
         fade: true,
         asNavFor: '.slider-nav',
-        autoplay: 'true',
+        // autoplay: 'true',
 
     });
     $('.slider-nav').slick({

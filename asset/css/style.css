@@ -1170,32 +1170,53 @@ footer.site-footer a:hover {
   margin-bottom: 0;
 }
 
-
 /***** product_details *****/
+
 #product_details {
   padding: 32px 0;
 }
+
+
+/* =========================
+   Product Images
+========================= */
 
 #product_details .slider-nav .slick-current img {
   border: 1px solid var(--branding-success);
 }
 
 #product_details .slider-nav .up,
-.down {
+#product_details .slider-nav .down {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+
+/* =========================
+   Product Info
+========================= */
+
 #product_details .product-info {
   font-family: var(--primary-font);
   max-width: 480px;
+}
+
+
+/* =========================
+   Sticky Product Content
+========================= */
+
+#product_details .product-sticky-content {
   position: sticky;
   top: 100px;
-  /* adjust to match your navbar height */
-  align-self: flex-start;
   z-index: 5;
 }
+
+
+/* =========================
+   Product Title
+========================= */
 
 #product_details .product-title {
   font-size: 2rem;
@@ -1205,6 +1226,11 @@ footer.site-footer a:hover {
   letter-spacing: -0.01em;
 }
 
+
+/* =========================
+   Product Price
+========================= */
+
 #product_details .product-price {
   font-size: 1.25rem;
   font-weight: 500;
@@ -1212,13 +1238,22 @@ footer.site-footer a:hover {
   margin: 0 0 24px;
 }
 
+
+/* =========================
+   Divider
+========================= */
+
 #product_details .product-divider {
   height: 1px;
   background: var(--color-border);
   margin-bottom: 28px;
 }
 
-/* Quantity + Add to cart row */
+
+/* =========================
+   Quantity + Add Cart
+========================= */
+
 #product_details .product-actions {
   display: flex;
   align-items: center;
@@ -1244,7 +1279,9 @@ footer.site-footer a:hover {
   color: var(--color-primary);
   font-size: 1.1rem;
   cursor: pointer;
-  transition: background 0.2s ease, color 0.2s ease;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
 }
 
 #product_details .qty-btn:hover {
@@ -1259,6 +1296,11 @@ footer.site-footer a:hover {
   color: var(--color-primary);
 }
 
+
+/* =========================
+   Buttons
+========================= */
+
 #product_details .btn {
   font-family: var(--primary-font);
   font-weight: 500;
@@ -1266,16 +1308,23 @@ footer.site-footer a:hover {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.25s ease, transform 0.15s ease;
+  transition:
+    background 0.25s ease,
+    transform 0.15s ease;
 }
+
+
+/* Add Cart */
 
 #product_details .btn-add-cart {
   flex: 1;
   height: 48px;
+
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
+
   background: var(--color-primary);
   color: var(--color-text-on-dark);
 }
@@ -1284,11 +1333,16 @@ footer.site-footer a:hover {
   background: var(--color-primary-soft);
 }
 
+
+/* Buy Now */
+
 #product_details .btn-buy-now {
   width: 100%;
   height: 52px;
+
   background: var(--color-cta);
   color: var(--color-text-on-dark);
+
   margin-bottom: 32px;
   letter-spacing: 0.02em;
 }
@@ -1298,7 +1352,15 @@ footer.site-footer a:hover {
   transform: translateY(-1px);
 }
 
-/* Product list */
+
+/* =========================
+   Product List
+========================= */
+
+#product_details .product-list {
+  margin-top: 10px;
+}
+
 #product_details .product-list-title {
   font-size: 1.05rem;
   font-weight: 600;
@@ -1310,6 +1372,7 @@ footer.site-footer a:hover {
   list-style: none;
   padding: 0;
   margin: 0;
+
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -1318,17 +1381,40 @@ footer.site-footer a:hover {
 #product_details .product-list li {
   position: relative;
   padding-left: 20px;
+
   color: var(--color-text);
   font-size: 0.95rem;
 }
 
 #product_details .product-list li::before {
   content: "";
+
   position: absolute;
   left: 0;
   top: 8px;
+
   width: 6px;
   height: 6px;
+
   border-radius: 50%;
   background: var(--color-highlight);
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 991.98px) {
+
+  #product_details .product-info {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+
+
+  #product_details .product-sticky-content {
+    position: static;
+  }
+
 }
