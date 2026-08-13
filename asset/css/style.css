@@ -562,12 +562,13 @@ banner {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+  border-radius: 15px;
 }
 
 #perfect .card-image {
   width: 100%;
   height: 260px;
-  border-radius: 110px 110px 0 0;
+  border-radius: 15px 15px 0 0;
   overflow: hidden;
   background: #eee;
 }
@@ -591,6 +592,7 @@ banner {
   font-size: 17px;
   font-weight: 700;
   color: #1a1a1a;
+  border-radius: 0 0 15px 15px;
 }
 
 /* selected / active state, matches the "For Him" card in the reference shot */
@@ -1417,4 +1419,75 @@ footer.site-footer a:hover {
     position: static;
   }
 
+}
+
+/* =========================
+   Color Selector (Radio based)
+========================= */
+
+#product_details .product-colors {
+  margin-bottom: 28px;
+}
+
+#product_details .product-colors-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 14px;
+}
+
+#product_details .color-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+/* Actual radio input hidden, but still accessible */
+#product_details .color-radio {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+#product_details .color-btn {
+  font-family: var(--primary-font);
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--color-border);
+  border-radius: 26px;
+  background: var(--color-bg-light, #fff);
+
+  color: var(--color-primary);
+  font-size: 0.95rem;
+  font-weight: 400;
+
+  cursor: pointer;
+  user-select: none;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+#product_details .color-btn:hover {
+  border-color: var(--color-cta);
+}
+
+/* Checked radio এর label কে style করা */
+#product_details .color-radio:checked+.color-btn {
+  background: var(--color-cta);
+  /* border-color: var(--color-primary); */
+  color: var(--color-text-on-dark);
+}
+
+/* Keyboard accessibility (Tab দিয়ে focus করলে outline দেখাবে) */
+#product_details .color-radio:focus-visible+.color-btn {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
 }

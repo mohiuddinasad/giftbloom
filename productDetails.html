@@ -383,7 +383,6 @@
 
                         <div class="product-info">
 
-                            <!-- Sticky Part -->
                             <div class="">
 
                                 <h2 class="product-title">
@@ -396,24 +395,65 @@
 
                                 <div class="product-divider"></div>
 
+                                <!-- Color Selector -->
+                                <div class="product-colors">
 
+                                    <h3 class="product-colors-title">
+                                        Color
+                                    </h3>
+
+                                    <div class="color-options">
+
+                                        <input type="radio" name="product-color" id="color-onion-pink"
+                                            value="Onion Pink" class="color-radio" checked>
+                                        <label for="color-onion-pink" class="color-btn">Onion Pink</label>
+
+                                        <input type="radio" name="product-color" id="color-off-white" value="Off-White"
+                                            class="color-radio">
+                                        <label for="color-off-white" class="color-btn">Off-White</label>
+
+                                        <input type="radio" name="product-color" id="color-black-belt"
+                                            value="Black belt" class="color-radio">
+                                        <label for="color-black-belt" class="color-btn">Black belt</label>
+
+                                        <input type="radio" name="product-color" id="color-purple" value="Purple"
+                                            class="color-radio">
+                                        <label for="color-purple" class="color-btn">Purple</label>
+
+                                        <input type="radio" name="product-color" id="color-deep-purple"
+                                            value="Deep purple" class="color-radio">
+                                        <label for="color-deep-purple" class="color-btn">Deep purple</label>
+
+                                        <input type="radio" name="product-color" id="color-glass-pink"
+                                            value="Glass pink" class="color-radio">
+                                        <label for="color-glass-pink" class="color-btn">Glass pink</label>
+
+                                        <input type="radio" name="product-color" id="color-light-blue"
+                                            value="Light Blue" class="color-radio">
+                                        <label for="color-light-blue" class="color-btn">Light Blue</label>
+
+                                        <input type="radio" name="product-color" id="color-navy" value="Navy"
+                                            class="color-radio">
+                                        <label for="color-navy" class="color-btn">Navy</label>
+
+                                        <input type="radio" name="product-color" id="color-aqua-blue" value="Aqua Blue"
+                                            class="color-radio">
+                                        <label for="color-aqua-blue" class="color-btn">Aqua Blue</label>
+
+                                        <input type="radio" name="product-color" id="color-violet" value="violet"
+                                            class="color-radio">
+                                        <label for="color-violet" class="color-btn">violet</label>
+
+                                    </div>
+
+                                </div>
                                 <!-- Quantity + Add to Cart -->
                                 <div class="product-actions">
 
                                     <div class="qty-selector">
-
-                                        <button class="qty-btn qty-minus" aria-label="Decrease quantity">
-                                            −
-                                        </button>
-
-                                        <span class="qty-value">
-                                            1
-                                        </span>
-
-                                        <button class="qty-btn qty-plus" aria-label="Increase quantity">
-                                            +
-                                        </button>
-
+                                        <button class="qty-btn qty-minus" aria-label="Decrease quantity">−</button>
+                                        <span class="qty-value">1</span>
+                                        <button class="qty-btn qty-plus" aria-label="Increase quantity">+</button>
                                     </div>
 
 
@@ -665,7 +705,7 @@
             </div>
         </div>
     </footer>
-   
+
     <script src="./asset/js/script.js"></script>
     <script src="./asset/js/vedio.js"></script>
     <script src="./asset/js/addToCart.js"></script>
@@ -675,6 +715,33 @@
     <script src="./asset/js/banner.js"></script>
     <script src="./asset/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const minQty = 1;
+            const maxQty = 99; // দরকার না হলে এই লাইন আর নিচের চেক বাদ দিতে পারেন
+
+            document.querySelectorAll('.qty-selector').forEach(function (selector) {
+                const minusBtn = selector.querySelector('.qty-minus');
+                const plusBtn = selector.querySelector('.qty-plus');
+                const qtyValue = selector.querySelector('.qty-value');
+
+                minusBtn.addEventListener('click', function () {
+                    let current = parseInt(qtyValue.textContent.trim(), 10);
+                    if (current > minQty) {
+                        qtyValue.textContent = current - 1;
+                    }
+                });
+
+                plusBtn.addEventListener('click', function () {
+                    let current = parseInt(qtyValue.textContent.trim(), 10);
+                    if (current < maxQty) {
+                        qtyValue.textContent = current + 1;
+                    }
+                });
+            });
+        });
+    </script>
 
 
 
