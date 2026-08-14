@@ -312,6 +312,8 @@ a {
 
 .cart-checkout-btn {
   width: 100%;
+  display: block;
+  text-align: center;
   margin-top: 16px;
   background: var(--color-cta);
   color: var(--color-text-on-dark);
@@ -1491,6 +1493,7 @@ footer.site-footer a:hover {
 }
 
 /* ===================== CHECKOUT PAGE ===================== */
+/* ===================== CHECKOUT PAGE ===================== */
 
 .checkout-page {
   background: #ffffff;
@@ -1841,10 +1844,4 @@ footer.site-footer a:hover {
   font-size: 11.5px;
   color: var(--color-text-light);
   margin-top: 12px;
-}
-
-@media (max-width: 991px) {
-  .co-summary {
-    position: static;
-  }
 }

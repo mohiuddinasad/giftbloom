@@ -16,11 +16,11 @@
     <link rel="stylesheet" href="./asset/css/slick.min.css">
 
     <title>GiftBloom | Checkout</title>
+
 </head>
 
 <body>
     <header>
-
 
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg">
@@ -78,13 +78,10 @@
 
         <!----------------------- modal ----------------------->
 
-
-        <!-- Modal (id = exampleModal, matches your trigger buttons) -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog ">
                 <div class="modal-content">
 
-                    <!-- Search input row (replaces modal-header) -->
                     <div class="search-input-wrap">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
@@ -102,11 +99,9 @@
                     </div>
 
                     <div class="modal-body-inner">
-                        <!-- Recently viewed -->
                         <div>
                             <div class="section-title-row">
                                 <h6>products</h6>
-
                             </div>
                             <div class="row" id="recentlyViewedList">
                                 <div class="col-6 col-md-3 thumb-card">
@@ -135,8 +130,6 @@
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
             </div>
@@ -161,59 +154,29 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="products.html">Gift Packages</a>
                     </li>
-
                 </ul>
             </div>
         </div>
+
         <!-- cetagories -->
         <section id="cetagory">
-
             <div class="container">
-
-                <!-- Mobile Category Button -->
                 <div class="mobile-cetagory-trigger" onclick="toggleCategory()">
                     <i class="fa-solid fa-bars"></i>
                     <span>Gift Categories</span>
                     <i class="fa-solid fa-chevron-down category-chevron"></i>
                 </div>
-
-                <!-- Categories -->
                 <div class="d-flex flex-wrap justify-content-center cetagory-list" id="categoryList">
-
-                    <div class="cetagory-item">
-                        <a href="products.html">Birthday Gifts</a>
-                    </div>
-
-                    <div class="cetagory-item">
-                        <a href="products.html">Sorry Gifts</a>
-                    </div>
-
-                    <div class="cetagory-item">
-                        <a href="products.html">Anniversary Gifts</a>
-                    </div>
-
-                    <div class="cetagory-item">
-                        <a href="products.html">Valentine's Day</a>
-                    </div>
-
-                    <div class="cetagory-item">
-                        <a href="products.html">Women's Day</a>
-                    </div>
-                    <div class="cetagory-item">
-                        <a href="products.html">Mother's Day</a>
-                    </div>
-                    <div class="cetagory-item">
-                        <a href="products.html">Gift Wrapping</a>
-                    </div>
-
+                    <div class="cetagory-item"><a href="products.html">Birthday Gifts</a></div>
+                    <div class="cetagory-item"><a href="products.html">Sorry Gifts</a></div>
+                    <div class="cetagory-item"><a href="products.html">Anniversary Gifts</a></div>
+                    <div class="cetagory-item"><a href="products.html">Valentine's Day</a></div>
+                    <div class="cetagory-item"><a href="products.html">Women's Day</a></div>
+                    <div class="cetagory-item"><a href="products.html">Mother's Day</a></div>
+                    <div class="cetagory-item"><a href="products.html">Gift Wrapping</a></div>
                 </div>
-
             </div>
-
         </section>
-
-
-        <!---------------------- cart offcanvas ---------------------->
 
         <!---------------------- cart offcanvas ---------------------->
 
@@ -227,10 +190,7 @@
             </div>
 
             <div class="offcanvas-body">
-
-                <!-- cart items list -->
                 <div id="cartItemsList">
-
                     <div class="cart-item" data-price="1390">
                         <img class="cart-item__img"
                             src="https://images.unsplash.com/photo-1520763185298-1b434c919102?w=200&h=200&fit=crop"
@@ -282,10 +242,8 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
 
-                <!-- special instructions -->
                 <div class="cart-note" id="cartNote">
                     <button type="button" class="cart-note__toggle" id="noteToggleBtn">
                         Special instructions
@@ -294,32 +252,18 @@
                     <textarea placeholder="Add any special instructions..."></textarea>
                 </div>
 
-                <!-- summary -->
                 <div class="cart-summary">
                     <div class="cart-summary__row">
                         <span>Estimated total</span>
                         <span id="cartTotal">Tk 3,620.00 BDT</span>
                     </div>
                     <p class="cart-summary__note">Taxes, discounts and shipping calculated at checkout.</p>
-                    <button type="button" class="cart-checkout-btn">Checkout</button>
-                </div>
 
+                    <a href="checkout.html" class="cart-checkout-btn">Checkout</a>
+                </div>
             </div>
         </div>
-
-        <!---------------------- mobile bottom navbar ---------------------->
-        <!-- <section id="bottomNav" class="d-lg-none">
-            <div class="container">
-                <div class="row">
-                    <div class="col-6">
-
-                    </div>
-                </div>
-            </div>
-        </section> -->
     </header>
-
-
 
     <!---------------------- checkout page content ---------------------->
 
@@ -429,7 +373,7 @@
                                 <div class="t">Cash on Delivery (COD)</div>
                                 <div class="d">Pay in cash when your gift arrives at the door</div>
                             </div>
-                            <span class="pay-option__check"><i class="fa-solid fa-circle-check"></i></span>
+
                         </div>
 
                     </div>
@@ -499,13 +443,11 @@
         <div class="container">
             <div class="row gy-4">
 
-                <!-- Brand -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="footer-logo mb-3">Giftbloom<span>BD</span></div>
                     <p class="footer-desc">
                         Premium gift hampers, carefully selected for your loved ones — make every moment even more
                         memorable.
-
                     </p>
                     <div class="social-icons mt-4">
                         <a href="#"><iconify-icon icon="ic:baseline-facebook" width="24" height="24"></iconify-icon></a>
@@ -513,7 +455,6 @@
                     </div>
                 </div>
 
-                <!-- Quick Links -->
                 <div class="col-6 col-md-3 col-lg-2">
                     <div class="footer-heading">Quick Links</div>
                     <ul class="list-unstyled footer-links">
@@ -523,7 +464,6 @@
                     </ul>
                 </div>
 
-                <!-- Categories -->
                 <div class="col-6 col-md-3 col-lg-2">
                     <div class="footer-heading">Information</div>
                     <ul class="list-unstyled footer-links">
@@ -534,7 +474,6 @@
                     </ul>
                 </div>
 
-                <!-- Contact + Newsletter -->
                 <div class="col-12 col-lg-4">
                     <div class="footer-heading">Contact Us</div>
                     <div class="contact-item">
@@ -549,8 +488,6 @@
                         <i class="bi bi-envelope-fill"></i>
                         <span>giftbloombd@gmail.com</span>
                     </div>
-
-
                 </div>
 
             </div>
@@ -575,6 +512,7 @@
     <script src="./asset/js/banner.js"></script>
     <script src="./asset/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+
     <script>
         // shipping selection + live total
         const shipOptions = document.querySelectorAll('.ship-option');
@@ -595,8 +533,6 @@
             });
         });
     </script>
-
-
 
 </body>
 

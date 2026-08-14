@@ -1,3 +1,128 @@
+@media (max-width: 767px) {
+    .checkout-page {
+        padding: 32px 0 56px;
+    }
+
+    .checkout-title {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+
+    .co-card {
+        padding: 20px 18px;
+        margin-bottom: 18px;
+        border-radius: 12px;
+    }
+
+    .co-card__step {
+        margin-bottom: 16px;
+    }
+
+    .co-card__step h2 {
+        font-size: 15.5px;
+    }
+
+    .ship-option {
+        padding: 13px 14px;
+        gap: 12px;
+    }
+
+    .ship-option__icon {
+        width: 34px;
+        height: 34px;
+        font-size: 13px;
+    }
+
+    .ship-option__text .t {
+        font-size: 13.5px;
+    }
+
+    .ship-option__price {
+        font-size: 13.5px;
+    }
+
+    .pay-option {
+        padding: 14px;
+        gap: 12px;
+    }
+
+    .pay-option__icon {
+        width: 36px;
+        height: 36px;
+        font-size: 15px;
+    }
+
+    .pay-option .t {
+        font-size: 14px;
+    }
+
+    .pay-option .d {
+        font-size: 11.5px;
+    }
+
+    .co-summary {
+        padding: 20px 18px;
+        border-radius: 12px;
+    }
+
+    .co-place-btn {
+        padding: 13px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 575px) {
+    .checkout-title {
+        font-size: 21px;
+    }
+
+    .co-card__step .num {
+        width: 22px;
+        height: 22px;
+        font-size: 11px;
+    }
+
+    .ship-option {
+        flex-wrap: wrap;
+        row-gap: 8px;
+    }
+
+    .ship-option__text {
+        flex-basis: 0;
+        flex-grow: 1;
+        min-width: 120px;
+    }
+
+    .ship-option__price {
+        white-space: nowrap;
+    }
+
+    .pay-option {
+        flex-wrap: wrap;
+    }
+
+    .pay-option__check {
+        margin-left: 52px;
+    }
+
+    .co-summary-item img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .co-summary-item__info .n {
+        font-size: 12.5px;
+    }
+
+    .co-promo {
+        flex-wrap: wrap;
+    }
+
+    .co-promo button {
+        padding: 10px 16px;
+    }
+}
+
 /* =========================================
    SMALL MOBILE
 ========================================= */
@@ -280,10 +405,12 @@
     #product_details .slider-nav .slick-list.draggable {
         width: 100%;
     }
+
     #product_details .slider-nav .nav_img {
-        padding: 0 5px; 
+        padding: 0 5px;
     }
-    #product_details .slider-nav .nav_img img{
+
+    #product_details .slider-nav .nav_img img {
         object-fit: cover;
     }
 
@@ -295,5 +422,11 @@
         left: 50% !important;
         transform: translateX(-50%) !important;
     }
+
+    .co-summary {
+        position: static;
+    }
+
+
 
 }
