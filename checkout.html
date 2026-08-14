@@ -328,10 +328,10 @@
 
             <h1 class="checkout-title">Checkout</h1>
 
-            <div class="checkout-grid">
+            <div class="row">
 
                 <!-- LEFT: forms -->
-                <div>
+                <div class="col-lg-7">
 
                     <!-- Step 1: Delivery details -->
                     <div class="co-card">
@@ -340,14 +340,18 @@
                             <h2>Delivery Details</h2>
                         </div>
 
-                        <div class="co-row">
-                            <div class="co-field">
-                                <label for="fullName">Full Name</label>
-                                <input type="text" id="fullName" placeholder="e.g. Mohiuddin Asad">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="co-field">
+                                    <label for="fullName">Full Name</label>
+                                    <input type="text" id="fullName" placeholder="e.g. Mohiuddin Asad">
+                                </div>
                             </div>
-                            <div class="co-field">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" placeholder="01XXX-XXXXXX">
+                            <div class="col-md-6">
+                                <div class="co-field">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" placeholder="01XXX-XXXXXX">
+                                </div>
                             </div>
                         </div>
 
@@ -356,14 +360,18 @@
                             <input type="text" id="address" placeholder="House, Road, Area">
                         </div>
 
-                        <div class="co-row">
-                            <div class="co-field">
-                                <label for="area">Area / Thana</label>
-                                <input type="text" id="area" placeholder="e.g. Pahartali">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="co-field">
+                                    <label for="area">Area / Thana</label>
+                                    <input type="text" id="area" placeholder="e.g. Pahartali">
+                                </div>
                             </div>
-                            <div class="co-field">
-                                <label for="city">City</label>
-                                <input type="text" id="city" placeholder="e.g. Chattogram" value="Chattogram">
+                            <div class="col-md-6">
+                                <div class="co-field">
+                                    <label for="city">City</label>
+                                    <input type="text" id="city" placeholder="e.g. Chattogram" value="Chattogram">
+                                </div>
                             </div>
                         </div>
 
@@ -429,53 +437,55 @@
                 </div>
 
                 <!-- RIGHT: order summary -->
-                <div class="co-summary">
-                    <h2>Order Summary</h2>
+                <div class="col-lg-5 mt-4 mt-lg-0">
+                    <div class="co-summary">
+                        <h2>Order Summary</h2>
 
-                    <div class="co-summary-item">
-                        <img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?w=200&h=200&fit=crop"
-                            alt="The Ruby Essence">
-                        <div class="co-summary-item__info">
-                            <div class="n">The Ruby Essence</div>
-                            <div class="q">Qty: 1</div>
+                        <div class="co-summary-item">
+                            <img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?w=200&h=200&fit=crop"
+                                alt="The Ruby Essence">
+                            <div class="co-summary-item__info">
+                                <div class="n">The Ruby Essence</div>
+                                <div class="q">Qty: 1</div>
+                            </div>
+                            <div class="co-summary-item__price">Tk 1,390.00</div>
                         </div>
-                        <div class="co-summary-item__price">Tk 1,390.00</div>
-                    </div>
 
-                    <div class="co-summary-item">
-                        <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=200&h=200&fit=crop"
-                            alt="Pink Me Up">
-                        <div class="co-summary-item__info">
-                            <div class="n">Pink Me Up</div>
-                            <div class="q">Qty: 1</div>
+                        <div class="co-summary-item">
+                            <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=200&h=200&fit=crop"
+                                alt="Pink Me Up">
+                            <div class="co-summary-item__info">
+                                <div class="n">Pink Me Up</div>
+                                <div class="q">Qty: 1</div>
+                            </div>
+                            <div class="co-summary-item__price">Tk 2,230.00</div>
                         </div>
-                        <div class="co-summary-item__price">Tk 2,230.00</div>
-                    </div>
 
-                    <div class="co-promo">
-                        <input type="text" placeholder="Promo code">
-                        <button type="button">Apply</button>
-                    </div>
-
-                    <div class="co-totals">
-                        <div class="co-totals-row">
-                            <span>Subtotal</span>
-                            <span>Tk 3,620.00</span>
+                        <div class="co-promo">
+                            <input type="text" placeholder="Promo code">
+                            <button type="button">Apply</button>
                         </div>
-                        <div class="co-totals-row">
-                            <span>Shipping</span>
-                            <span id="shipCost">Tk 70.00</span>
-                        </div>
-                        <div class="co-totals-row grand">
-                            <span>Total</span>
-                            <span id="grandTotal">Tk 3,690.00 BDT</span>
-                        </div>
-                    </div>
 
-                    <button type="button" class="co-place-btn">Place Order</button>
+                        <div class="co-totals">
+                            <div class="co-totals-row">
+                                <span>Subtotal</span>
+                                <span>Tk 3,620.00</span>
+                            </div>
+                            <div class="co-totals-row">
+                                <span>Shipping</span>
+                                <span id="shipCost">Tk 70.00</span>
+                            </div>
+                            <div class="co-totals-row grand">
+                                <span>Total</span>
+                                <span id="grandTotal">Tk 3,690.00 BDT</span>
+                            </div>
+                        </div>
 
-                    <div class="co-secure">
-                        <i class="fa-solid fa-lock"></i> Your information is safe with us
+                        <button type="button" class="co-place-btn">Place Order</button>
+
+                        <div class="co-secure">
+                            <i class="fa-solid fa-lock"></i> Your information is safe with us
+                        </div>
                     </div>
                 </div>
 
@@ -565,6 +575,26 @@
     <script src="./asset/js/banner.js"></script>
     <script src="./asset/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+    <script>
+        // shipping selection + live total
+        const shipOptions = document.querySelectorAll('.ship-option');
+        const shipPrices = [70, 120, 150];
+        const subtotal = 3620;
+        const shipCostEl = document.getElementById('shipCost');
+        const grandTotalEl = document.getElementById('grandTotal');
+
+        shipOptions.forEach((opt, i) => {
+            opt.addEventListener('click', () => {
+                shipOptions.forEach(o => o.classList.remove('active'));
+                opt.classList.add('active');
+                opt.querySelector('input[type="radio"]').checked = true;
+
+                const cost = shipPrices[i];
+                shipCostEl.textContent = 'Tk ' + cost.toFixed(2);
+                grandTotalEl.textContent = 'Tk ' + (subtotal + cost).toLocaleString() + '.00 BDT';
+            });
+        });
+    </script>
 
 
 

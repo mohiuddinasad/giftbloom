@@ -1490,7 +1490,6 @@ footer.site-footer a:hover {
   outline-offset: 2px;
 }
 
-
 /* ===================== CHECKOUT PAGE ===================== */
 
 .checkout-page {
@@ -1500,31 +1499,12 @@ footer.site-footer a:hover {
   padding: 48px 0 80px;
 }
 
-.checkout-path {
-  font-size: 13px;
-  color: var(--color-text-light);
-  margin-bottom: 6px;
-  letter-spacing: .02em;
-}
-
-.checkout-path span {
-  color: var(--color-cta);
-  font-weight: 600;
-}
-
 .checkout-title {
   font-size: 30px;
   font-weight: 700;
   color: var(--color-primary);
   margin-bottom: 36px;
   letter-spacing: -0.01em;
-}
-
-.checkout-grid {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: 32px;
-  align-items: start;
 }
 
 .co-card {
@@ -1598,12 +1578,6 @@ footer.site-footer a:hover {
 .co-field textarea {
   resize: vertical;
   min-height: 70px;
-}
-
-.co-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
 }
 
 /* shipping zone cards */
@@ -1869,16 +1843,8 @@ footer.site-footer a:hover {
   margin-top: 12px;
 }
 
-@media (max-width: 991.98px) {
-  .checkout-grid {
-    grid-template-columns: 1fr;
-  }
-
+@media (max-width: 991px) {
   .co-summary {
     position: static;
-  }
-
-  .co-row {
-    grid-template-columns: 1fr;
   }
 }
